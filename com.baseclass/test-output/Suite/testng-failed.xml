@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test-2(failed)">
+    <classes>
+      <class name="com.pom.org.Create_All_Organization_BaseClass_Test">
+        <methods>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="createContactTest"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="createOrganizationWithIndustriesTest"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="createOrganizationWithPhoneNumberTest"/>
+        </methods>
+      </class> <!-- com.pom.org.Create_All_Organization_BaseClass_Test -->
+    </classes>
+  </test> <!-- Test-2(failed) -->
+  <test thread-count="2" parallel="tests" name="Test-1(failed)">
+    <classes>
+      <class name="com.pom.contact.Create_All_Contact_BaseClass_Test">
+        <methods>
+          <include name="configBC"/>
+          <include name="configBS"/>
+          <include name="configAC"/>
+          <include name="configAS"/>
+          <include name="createContactTest"/>
+          <include name="createContactWithSupportDate"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="createContactWithOrganisationIntegration"/>
+        </methods>
+      </class> <!-- com.pom.contact.Create_All_Contact_BaseClass_Test -->
+    </classes>
+  </test> <!-- Test-1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
